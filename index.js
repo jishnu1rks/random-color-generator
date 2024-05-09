@@ -7,5 +7,7 @@ function getRandomColor() {
     // color.push();
   }
 }
-
-console.log(getRandomColor());
+document.getElementById("button").addEventListener("click", () => {
+  const color = getRandomColor();
+  document.getElementById("color").style.backgroundColor = color;
+})
